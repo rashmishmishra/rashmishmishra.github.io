@@ -1,11 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rashmish</title>
+    <title>Your Name – Academic Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Simple, readable styling -->
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            background-color: #f5f5f7;
+            color: #1c1c1e;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1.5rem;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        header h1 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1.9rem;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .contact {
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            margin: 1.5rem 0 2rem;
+            font-size: 0.95rem;
+        }
+
+        nav a {
+            margin-right: 1.25rem;
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h3 {
+            margin: 0 0 0.75rem 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.25rem;
+        }
+
+        .pub {
+            margin-bottom: 1rem;
+        }
+
+        .pub-title {
+            font-weight: 600;
+        }
+
+        .pub-authors,
+        .pub-venue {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .pub-links a {
+            font-size: 0.9rem;
+            margin-right: 0.75rem;
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 1.1rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            header {
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Testing</h1>
-    <p>This is my first webpage hosted on GitHub Pages.</p>
+<div class="page">
+    <header>
+        <!-- Replace the background-image URL with a link to your photo, or remove style to keep it blank -->
+        <div class="avatar" style="background-image: url('your-photo.jpg');"></div>
+
+        <div>
+            <h1>Your Name</h1>
+            <h2>Title / Position · Department · Institution</h2>
+            <div class="contact">
+                <div>Email: <a href="mailto:you@university.edu">you@university.edu</a></div>
+                <div>
+                    <a href="https://scholar.google.com" target="_blank">Google Scholar</a> ·
+                    <a href="https://orcid.org" target="_blank">ORCID</a> ·
+                    <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+    </nav>
+
+    <section id="about">
+        <h3>About</h3>
+        <p>
+            I am a [your current position, e.g., Ph.D. student / postdoctoral researcher / assistant professor]
+            in the [Department] at [Institution]. My research focuses on [1–2 sentence summary of your main
+            research interests].
+        </p>
+        <p>
+            Before this, I completed my [degree] in [field] at [previous institution], where I worked with
+            [advisor(s), if applicable]. I am broadly interested in [a few keywords or themes that describe
+            your work].
+        </p>
+    </section>
+
+    <section id="research">
+        <h3>Research Interests</h3>
+        <ul>
+            <li>Area 1 – short description of what you study here.</li>
+            <li>Area 2 – short description of what you study here.</li>
+            <li>Area 3 – short description of what you study here.</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h3>Selected Publications</h3>
+
+        <!-- Example publication block; duplicate and edit for each paper -->
+        <div class="pub">
+            <div class="pub-title">
+                “Title of Your Paper”
+            </div>
+            <div class="pub-authors">
+                Your Name, Coauthor Name, Coauthor Name
+            </div>
+            <div class="pub-venue">
+                Conference or Journal Name, Year
+            </div>
+            <div class="pub-links">
+                <a href="#" target="_blank">PDF</a>
+                <a href="#" target="_blank">Code</a>
+                <a href="#" target="_blank">DOI</a>
+            </div>
+        </div>
+
+        <div class="pub">
+            <div class="pub-title">
+                “Another Paper Title”
+            </div>
+            <div class="pub-authors">
+                Your Name, Coauthor Name
+            </div>
+            <div class="pub-venue">
+                Journal Name, Year
+            </div>
+            <div class="pub-links">
+                <a href="#" target="_blank">PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h3>Teaching</h3>
+        <ul>
+            <li>
+                Course Title (Institution, Term Year) – role (e.g., Instructor / Teaching Assistant).
+            </li>
+            <li>
+                Course Title (Institution, Term Year) – short note (e.g., Led discussion sections, designed assignments).
+            </li>
+        </ul>
+    </section>
+
+    <section id="cv">
+        <h3>Curriculum Vitae</h3>
+        <p>
+            Download my CV:
+            <a href="cv.pdf" target="_blank">cv.pdf</a>
+        </p>
+    </section>
+
+    <footer>
+        Last updated: Month Day, Year · This site is hosted on GitHub Pages.
+    </footer>
+</div>
 </body>
 </html>
